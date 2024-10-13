@@ -1,0 +1,236 @@
+for time watch:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="clock()">
+    <h1></h1>
+    <!-- <h2>Lorem ipsum dolor sit amet.</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem ipsum dolor sit amet.</h4> -->
+    <script>
+        function clock(){
+            var date=new Date();
+            var hr=date.getHours();
+            var min=date.getMinutes();
+            var sec=date.getSeconds();
+            var time=hr+":"+ min+":"+sec;
+            document.getElementsByTagName('h1')[0].innerText=time;
+            
+            setTimeout(clock,1000);
+
+        }
+        
+    </script>
+</body>
+</html>
+
+for watch:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        .clock{width: 400px;
+            height: 400px;
+            background-color: blue;
+            border-radius: 50%;
+
+
+        } 
+        .clock1{width: 150px;
+        height: 80px;
+        background-color: blueviolet;
+        position: relative;
+        left: 100px;
+        top: 140px;
+        font-size:40px;
+
+        
+        }  
+        body{
+            margin: 300px;
+        }
+        .hr{position: relative;
+        font-size:xx-large}
+        .hours1{
+            left: 299px;
+            top: 38px;
+        }
+        .hours2{
+            left: 355px;
+            top: 62px;
+        }
+        .hours3{
+            left: 375px;
+            top: 95px;
+    
+        }
+        .hours4{
+            left: 365px;
+            top: 130px;
+        }
+        .hours5{
+            left: 305px;
+            top: 160px;
+        }
+        .hours6{
+            left: 205px;
+            top: 160px;
+        }
+        .hours7{
+            left: 106px;
+            top: 97px;
+        }
+        .hours8{
+            left: 28px;
+            top: -15px;
+        }
+        .hours9{
+            left: 11px;
+            top: -139px;
+        }
+        .hours10{
+            left: 28px;
+            top: -251px;
+        }
+        .hours11{
+            left: 98px;
+            bottom: 353px;
+        }
+        .hours12{
+            left: 190px;
+            bottom:410px;
+        }
+        .dot{
+            position: relative;
+            background-color: black;
+            width:10px;
+            height:10px;
+            left: 194px;
+            bottom:-186px;
+            border-radius:50%;
+        }
+
+    
+         </style>
+
+</head>
+<body onload="clock()">
+    <div class="clock">
+        <!-- <div class="clock1"></div> -->
+         <div class="dot"></div>
+         <div class="hr hours1">1</div>
+         <div class="hr hours2">2</div>
+         <div class="hr hours3">3</div>
+         <div class="hr hours4">4</div>
+         <div class="hr hours5">5</div>
+         <div class="hr hours6">6</div>
+         <div class="hr hours7">7</div>
+         <div class="hr hours8">8</div>
+         <div class="hr hours9">9</div>
+         <div class="hr hours10">10</div>
+         <div class="hr hours11">11</div>
+         <div class="hr hours12">12</div>
+    </div>
+    <script>
+    function clock(){
+        var date = new Date();
+        var hr=date.getHours();
+        var min = date.getMinutes();
+        var sec= date.getSeconds();
+        var time=hr+":"+ min+":"+sec;
+        document.getElementsByClassName('clock1')[0].innerText=time;
+        setTimeout(clock,1000);     
+    }
+
+
+
+    </script>
+</body>
+</html>
+<!-- for selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: brown;
+        }
+        h1[draggable] {
+            color: blueviolet;
+        }
+        input[type="text"]{
+            color:blue;
+        font-size: larger;
+        font-weight: 600;
+        }
+        div h1{
+    color:green;
+
+        }
+        div p{
+    color:blue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 draggable> ritesh</h1>
+    <h1>aman</h1>
+    <input type="text" placeholder="write your name">
+    <input type="email">
+    <input type="password">
+    <div><h1>ritesh</h1>
+    <h1>preeeti</h1>
+<p>nitin</p></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+        color:blue;
+      }
+      span{
+        color: brown;
+      }
+      div{
+        padding: 50px;
+        justify-content: center;
+        display:flex;
+        margin: 50px;   
+        border: 50px,solid,black;
+      }
+      img{
+        width: 500px;
+        height: 400px;
+      }
+      *{
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+</head>
+<body>
+<h1>maxbyte <span>placement acad</span></h1>
+<div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/640px-Cat_November_2010-1a.jpg" alt="">
+    <img src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg" alt="">
+</div>
+</body>
+</html>

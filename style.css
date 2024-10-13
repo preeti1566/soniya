@@ -1,0 +1,33 @@
+/* Base styles for the element */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center the box vertically */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue; /* Initial color */
+    transition: background-color 1s ease, transform 1s ease; /* Transition properties */
+}
+
+/* Hover state */
+.box:hover {
+    background-color: red; 
+    transform: scale(1.2); 
+} 
+@keyframes preeti {
+    from{opacity:0};
+    to{opacity:1}
+}
+
+h1{
+    transform: rotate(45deg);
+    animation: preeti 5s ease-in;
+    
+}
+
